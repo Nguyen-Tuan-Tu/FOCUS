@@ -3,7 +3,7 @@
 FOCUS: Knowledge-enhanced Adaptive Visual Compression for Few-shot Whole Slide Image Classification, **CVPR 2025**\
 *Zhengrui Guo, Conghao Xiong, Jiabo MA, Qichen Sun, Lishuang Feng, Jinzhuo Wang, Hao Chen*
 
-[[ArXiv]](https://arxiv.org/abs/2411.14743)
+[[ArXiv]](https://arxiv.org/abs/2411.14743) [[CVPR Proceedings]](https://openaccess.thecvf.com/content/CVPR2025/html/Guo_FOCUS_Knowledge-enhanced_Adaptive_Visual_Compression_for_Few-shot_Whole_Slide_Image_CVPR_2025_paper.html)
 
 ![Methodology of FOCUS](image/method.png)
 
@@ -51,10 +51,11 @@ This codebase is based on [ViLa-MIL](https://github.com/Jiangbo-Shi/ViLa-MIL) an
 ## Reference
 If you find our work useful in your research, please consider citing our paper at::
 ```
-@article{guo2024focus,
-  title={FOCUS: Knowledge-enhanced Adaptive Visual Compression for Few-shot Whole Slide Image Classification},
+@inproceedings{guo2025focus,
+  title={Focus: Knowledge-enhanced adaptive visual compression for few-shot whole slide image classification},
   author={Guo, Zhengrui and Xiong, Conghao and Ma, Jiabo and Sun, Qichen and Feng, Lishuang and Wang, Jinzhuo and Chen, Hao},
-  journal={arXiv preprint arXiv:2411.14743},
-  year={2024}
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={15590--15600},
+  year={2025}
 }
 ```
