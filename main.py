@@ -1,3 +1,4 @@
+# ầu zê heehee
 from __future__ import print_function
 import argparse
 import os
@@ -118,15 +119,16 @@ elif args.task == 'task_UBC-OCEAN_subtyping':
     
 elif args.task == 'task_camelyon_subtyping':
     args.n_classes=2
-    dataset = Generic_MIL_Dataset(csv_path = '/home/gzr/EasyMIL/dataset_csv/camelyon.csv',
-                            mode = args.mode,
-                            data_dir_s = args.data_folder_s,
-                            data_dir_l = args.data_folder_l,
-                            shuffle = False, 
-                            print_info = True,
-                            label_dict = {'normal':0, 'tumor':1},
-                            patient_strat=False,
-                            ignore=[])
+    dataset = Generic_MIL_Dataset(
+        csv_path='/kaggle/working/FOCUS/dataset_csv/camelyon.csv',
+        mode=args.mode,
+        data_dir_s=args.data_folder_s,
+        data_dir_l=args.data_folder_l,
+        shuffle=False,
+        print_info=True,
+        label_dict = {0: 0, 1: 1},
+        patient_strat=False,
+        ignore=[])
     
 elif args.task == 'task_TUPAC16_subtyping':
     args.n_classes=3
@@ -151,9 +153,7 @@ if not os.path.exists(args.results_dir):
     os.makedirs(args.results_dir)
 
 if args.split_dir is None:
-    args.split_dir = os.path.join('splits', args.task+'_{}'.format(int(args.label_frac*100)))
-else:
-    args.split_dir = os.path.join('splits', args.split_dir)
+    args.split_dir = "/kaggle/working/FOCUS/dataset_csv/splits"
 
 print('split_dir: ', args.split_dir)
 assert os.path.isdir(args.split_dir)
@@ -222,5 +222,10 @@ if __name__ == "__main__":
     results = main(args)
     print("finished!")
     print("end script")
+
+
+
+
+
 
 
